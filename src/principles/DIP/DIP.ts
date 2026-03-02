@@ -1,4 +1,8 @@
-import { IOrderValidator, IOrderCalculator, IOrderRepository, IEmailService } from '../interfaces';
+// ПАПКА: DIP (Dependency Inversion Principle)
+// Залежності повинні бути від абстракцій, а не від конкретних реалізацій.
+// OrderProcessor інжектує інтерфейси замість конкретних класів.
+
+import { IOrderValidator, IOrderCalculator, IOrderRepository, IEmailService } from '../../interfaces';
 
 export class OrderProcessor {
   constructor(
